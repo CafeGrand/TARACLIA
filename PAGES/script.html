@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СКРИПТ</title>
+    <link rel="stylesheet" href="../CSS/main_style.css">
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <h1>ПРИМЕР ИЗМЕНЕНИЯ КОНТЕНТА</h1>
+    <p>jAVAScript может изменить контент какого-то HTML-элемента</p>
+    <button type="button" onclick="reaction()">НАЖМИ НА ЭТУ КНОПКУ</button>
+    <p id="eT">ПОСМОТРИ РЕЗУЛЬТАТ!</p>
+
+    <!-- манипуляция -->
+    <p id="eT1">Нажми на эту кнопку, чтобы увидеть результат манипуляции содержанием контента - удаление контента
+        (innerHTML)
+    </p>
+    <button onclick="reaction1()">ЖМИ</button>
+    <p id="eT2">Нажми на эту кнопку, чтобы увидеть результат манипуляции содержанием контента - изменение контента
+        (innerHTML)
+    </p>
+    <button onclick="reaction2()">ЖМИ И СЮДА</button>
+    
+    
+    <p>Напишите результат для следующего арифметического выражения</p>
+    <button onclick="rez()">ПОПРОБУЙ!</button>
+    <P id="verno"></P>
+
+    <!-- кнопка "Узнать время"-->
+    <div class="vremya">
+    <button class="knopka_vremya" onclick="getElementById('et4').innerHTML=Date();">УЗНАТЬ ТОЧНОЕ ВРЕМЯ</button>
+    <p id="et4"></p>
+    </div>
+    
+</body>
+</html>

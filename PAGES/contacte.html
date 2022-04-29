@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTE</title>
+    <link rel="stylesheet" href="../CSS/main_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+<link rel="icon" href="../IMAGES/favicon.png" type="icon" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+</head>
+    <body>
+        <header>
+            <div class="logotip col-2">
+                <a href="../index.html">
+                    <Img class=image-header src="../IMAGES/zhar-ptitsa.png" />
+                </a>
+            </div>
+            <div class="col-8">
+                <h1 class="brand">кафе ЖАР-ПТИЦА</h1>
+            </div>
+        </header>
+        <div class="container">
+            <aside>
+                <a href="pizza.html"><i class="fas fa-pizza-slice"></i>Пицца</a>
+                <a href="pasta.html"><i class="fas fa-utensils"></i></i>Паста</a>
+                <a href="napitki.html"><i class="fas fa-wine-glass"></i>Напитки</a>
+                <a href="salaty.html"><i class="fas fa-seedling"></i>Салаты</a>
+
+            </aside>
+        </div>
+            <main>
+                <h1 class="hmenu">КОНТАКТЫ</h1>
+                <hr class="linia">
+                <div class="ContDan">
+                    <div class="col-5 forma">
+                        <h3 class="hmenu">Оставьте сообщение <i class="fas fa-envelope-open"></i></h3>
+                        <form autocomplete="off" id="formular" action="">
+                            <input type="text" placeholder="Имя" required id="imea" />
+                            <input type="email" placeholder="email" required id="adress" />
+                            <input type="text" placeholder="Тема" required id="tema" />
+                            <textarea placeholder="Текст_сообщения" rows="7" id="mesage"></textarea>
+                            <input type="button" value="Отправить" id="knopka" onclick="send()" />
+                        </form>
+                    </div>
+                    <div class="col-5" phoneContact>
+                        
+                    </div>
+                    
+                    <!-- <div class="col-5" phoneContact>
+                        <h3 class="hmenu">Другие спообы связи </h3>
+                        <p><i class="fas fa-phone-square-alt"></i>Телефон</p>
+                        <p><i class="fab fa-facebook-square"></i>Facebook</p>
+                        <p><i class="fab fa-instagram-square"></i>Instagram</p>
+                    </div> -->
+                </div>
+
+            </main>
+            <footer>
+                <h1>&copy;кафе ЖАР-ПТИЦА 2022</h1>
+            </footer>
+            <Script>
+                emailjs.init("KsDzcq9NfO4MGj6Qn");
+                function send() {
+                if (document.getElementById("formular").checkValidity()==false) {
+                    document.getElementById("formular").reportValidity();
+                    return;
+                    }
+                    var date = {
+                        Имя: document.getElementById("imea").value,
+                        email: document.getElementById("adress").value,
+                        Тема: document.getElementById("tema").value,
+                        Текст_сообщения: document.getElementById("mesage").value
+                    };
+
+                    emailjs.send("service_iclnz3u", "template_ap35932", date)
+                        .then(function (respons) {
+                        alert("Ваше сообщение отправлено")
+                        document.getElementById("formular").reset();
+                    }, function (error) {
+                        alert("Ошибка при отправке!")
+                    }) 
+                }
+            </Script>
+        </div>
+    </body>
+</html> 
