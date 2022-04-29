@@ -1,0 +1,54 @@
+/*СТРАНИЦА КОНТАКТы*/
+body{
+    background-image: url(../IMAGES/divan.jpg);
+    background-size: contain;
+    background-color: rgb(57, 146, 45);
+    
+}
+.hmenu{
+    color: bisque;
+    margin-bottom: 5px;
+    text-align: center;
+}
+h3.hmenu {
+    color: bisque;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+.ContDan{
+    min-height: 650px;
+    background-color: rgba(141, 98, 98, 0.37);
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    padding: 15px 10px;
+    display: flex;
+}
+.forma{
+    padding: 0 10px;
+}
+.forma input, .forma textarea{
+    width: 50%;
+    padding: 5px;
+    margin: 6px;
+    font-size: 18px;
+    background-color: rgb(229, 225, 160);
+    border-color: blanchedalmond;
+    border-radius: 10px;
+    color: rgb(138, 138, 127);
+    text-decoration: underline;
+    box-sizing: border-box;
+}
+/*.phoneContact p span{
+    font-size: 30px;
+    margin-left: 30px;
+}*/
+#send:hover{
+    cursor: pointer;
+}
+.forma input::placeholder, .forma textarea::placeholder{
+    color: rgba(70, 70, 70, 0.85);
+    text-decoration: underline;
+}
+.forma input,:focus .forma textarea:focus {
+    border: 1px solid brown;
+}

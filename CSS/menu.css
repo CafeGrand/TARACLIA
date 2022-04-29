@@ -1,0 +1,93 @@
+/*  ОБЩЕЕ */
+body{
+    background-image: url(../IMAGES/trava.jpg);
+    background-size: contain;
+    background-color: rgb(73, 116, 67);
+}
+
+h1,h2{
+    color: bisque;
+    text-align: center;
+}
+.menu h1{
+    align-items: center;
+}
+
+/* РАЗДЕЛЫ МЕНЮ */
+
+.menu{
+    text-align: center;
+    font-size: 30px;
+    background-color: rgba(138, 116, 90, 0.85);
+    border-radius: 20px;
+    max-width: 50%;
+    color: bisque;
+    margin: 20px 25%;
+}
+.blocmenu{
+    align-items: center;
+    min-width: 50%;
+}
+.blocmenu a{
+    text-decoration: none;
+} 
+.round{
+    text-align: center;
+    border-radius: 20px;
+    background-color: bisque;
+    padding: 10px;
+    margin: 20px 30%;
+    
+}   
+a .round {
+    color: #000;
+    
+}
+a .round:hover{
+    background-color: rgba(138, 116, 90, 0.863);
+    color: bisque;
+}
+
+/*.Left a{
+    text-decoration: none;
+}
+.Left  {
+    min-width: 40%;
+    box-sizing: border-box;
+}
+.Right a{
+    text-decoration: none;
+}
+.Right{
+    min-width: 40%;
+    box-sizing: border-box;
+}*/
+.QR{
+    align-items: baseline;
+    max-width: 50%;
+    border-radius: 10%;
+}
+
+/* СТРАНИЦЫ МЕНЮ*/
+
+img {
+    width: 75%;
+    border-radius: 10%;
+}
+p{
+    text-align: center;
+}
+.foto_menu{
+    width: 100%;
+    
+}
+
+/* навигация */
+
+.mini{
+    width: 7%;
+    margin-bottom: 20%;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 20px 20px 0 0;
+}

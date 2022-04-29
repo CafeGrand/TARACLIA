@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@1,500&family=Fira+Sans:ital,wght@0,300;1,500&display=swap');
+
+h1,h2{
+color: bisque;
+text-align: center;
+}
+ 
+body{
+    background-color: rgb(57, 146, 45);
+    background-image: url(../IMAGES/stol.png);
+    background-size: cover;
+    
+}
+.logo:hover{
+    animation: buh 1.5s;
+}
+@keyframes buh{
+    0% {transform: scale(100%);}
+    50%{transform: scale(120%);}
+    100% {transform: scale(100%);}
+}
+p{
+    text-align: center;
+    font-size: 30px;
+    color: bisque;
+}
+a{
+    color: bisque;
+}
+
+.round{
+    text-align: center;
+    border: 5px white;
+    border-radius: 20px;
+    border-style: groove;
+    width: auto;
+}
+.round a{
+    text-decoration: none;
+}
+.text {
+	font-size: 30px;
+}
+.text span {
+	display: inline;
+	background-color: rgba(0, 0, 0, 0.35);
+	padding: 0 10px 0 0;
+	color: #FFFFFF;
+	
+}
+table{ 
+    padding: 0px 10px; 
+    background-color: rgba (200, 200, 173, 0.5);
+}
+.karta{
+    text-align: center;
+    color: bisque;
+    
+}
+
