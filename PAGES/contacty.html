@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/contacty.css">
+    <title>КОНТАКТЫ</title>
+</head>
+<body>
+    <main>
+        <h1 class="hmenu">КОНТАКТЫ</h1>
+        <hr class="linia">
+        <div class="ContDan">
+            <div class="forma">
+                <h3 class="hmenu">Оставьте сообщение <i class="fas fa-envelope-open"></i></h3>
+                <form autocomplete="off" id="formular" action="">
+                    <input type="text" placeholder="Имя" required id="imea" />
+                    <input type="email" placeholder="email" required id="adress" />
+                    <input type="text" placeholder="Тема" required id="tema" />
+                    <textarea placeholder="Текст_сообщения" rows="7" id="mesage"></textarea>
+                    <input type="button" value="Отправить" id="knopka" onclick="send()" />
+                </form>
+            </div>
+            <div class="col-5" phoneContact>
+                
+            </div>
+           
+        </div>
+
+    </main>
+    <footer>
+        <h1>&copy;кафе ЖАР-ПТИЦА 2022</h1>
+    </footer>
+    <Script>
+        emailjs.init("KsDzcq9NfO4MGj6Qn");
+        function send() {
+        if (document.getElementById("formular").checkValidity()==false) {
+            document.getElementById("formular").reportValidity();
+            return;
+            }
+            var date = {
+                Имя: document.getElementById("imea").value,
+                email: document.getElementById("adress").value,
+                Тема: document.getElementById("tema").value,
+                Текст_сообщения: document.getElementById("mesage").value
+            };
+
+            emailjs.send("service_iclnz3u", "template_ap35932", date)
+                .then(function (respons) {
+                alert("Ваше сообщение отправлено")
+                document.getElementById("formular").reset();
+            }, function (error) {
+                alert("Ошибка при отправке!")
+            }) 
+        }
+    </Script>
+</div>
+
+</body>
+</html>
