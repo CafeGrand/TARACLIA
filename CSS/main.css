@@ -8,8 +8,7 @@ text-align: center;
 body{
     background-color: rgb(57, 146, 45);
     background-image: url(../IMAGES/stol.png);
-    background-size: cover;
-    
+    background-size: contain;
 }
 .logo:hover{
     animation: buh 1.5s;
@@ -52,9 +51,5 @@ table{
     padding: 0px 10px; 
     background-color: rgba (200, 200, 173, 0.5);
 }
-.karta{
-    text-align: center;
-    color: bisque;
-    
-}
+
 
