@@ -1,31 +1,109 @@
 /*СТРАНИЦА КОНТАКТы*/
 body{
     background-image: url(../IMAGES/divan.jpg);
-    background-size: contain;
+    background-size: cover;
     background-color: rgb(57, 146, 45);
     
 }
 .hmenu{
     color: bisque;
-    margin-bottom: 5px;
+    margin: 5px;
     text-align: center;
 }
-h3.hmenu {
+h2.hmenu {
     color: bisque;
-    margin-bottom: 5px;
-    padding-left: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* МЫ СЕЙЧАС...*/
+.OT{
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    background-color: bisque;
+    border-radius: 25px;
+    margin-left: 25%;
+    min-height: 50px;
+    padding-top: 20px;
+    font-size: 28px;
+    color: red;
+}
+
+/* кнопка "Узнать время"*/
+.vremya{
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    color: rgb(247, 14, 14);
+    background-color: bisque;
+    border-radius: 25px;
+    margin-left: 25%;
+    min-height: 70px;
+    padding-top: 10px;
+    font-size: 22px;
+}
+.knopka_vremya{
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(12, 12 , 12, 0.8);
+}
+.knopka_vremya:hover{
+    background-color: rgba(107, 202, 111, 0.575); 
+}
+
+/* СПОСОБЫ СВЯЗИ*/
+p.tel {
+    color: bisque;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 20px;
+}
+p.iF {
+    color: bisque;
+    text-align: center;
+    font-size: 30px;
+}
+
+.iF a {
+    text-decoration: none;
+    color: bisque;
+}
+
+/*ЭФФЕКТЫ И АНИМАЦИЯ*/
+.iF a:hover {
+    color: white;
+}
+.iF:hover{
+    animation: crug 1s;
+}
+@keyframes crug{
+    0%{ transform: rotate(-10deg);}
+    100%{ transform: rotate(0deg);}
+}
+.tel:hover{
+    animation: crug 1s;
+}
+@keyframes crug{
+    0%{ transform: rotate(-10deg);}
+    100%{ transform: rotate(0deg);}
 }
 .ContDan{
     min-height: 650px;
-    background-color: rgba(141, 98, 98, 0.37);
+    background-color: rgba(85, 177, 85, 0.37);
     border-radius: 10px;
     box-shadow: 1px 1px 5px black;
-    padding: 15px 10px;
-    display: flex;
+    margin-top: 8px;
 }
+ 
 .forma{
-    padding: 0 10px;
+    text-align: center;
+    width: 100%;
 }
+#send:hover{
+    cursor: pointer;
+}   
 .forma input, .forma textarea{
     width: 50%;
     padding: 5px;
@@ -51,4 +129,14 @@ h3.hmenu {
 }
 .forma input,:focus .forma textarea:focus {
     border: 1px solid brown;
+}
+footer {
+    background-color: rgba(78, 68, 32, 0.801);
+    min-height: 50px;
+    color:bisque;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    width: 100%;
+    font-size: 24px;
 }
