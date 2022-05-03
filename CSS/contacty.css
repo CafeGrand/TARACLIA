@@ -3,7 +3,7 @@ body{
     background-image: url(../IMAGES/divan.jpg);
     background-size: cover;
     background-color: rgb(57, 146, 45);
-    
+    margin: 0;
 }
 .hmenu{
     color: bisque;
