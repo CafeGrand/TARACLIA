@@ -3,6 +3,7 @@ body{
     background-image: url(../IMAGES/trava.jpg);
     background-size: contain;
     background-color: rgb(73, 116, 67);
+    margin: 0;
 }
 
 h1,h2{
