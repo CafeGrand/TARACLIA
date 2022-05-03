@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@1,500&family=Fira+Sans:ital,wght@0,300;1,500&display=swap');
 
-h1,h2{
-color: bisque;
-text-align: center;
-}
- 
 body{
     background-color: rgb(57, 146, 45);
     background-image: url(../IMAGES/stol.png);
     background-size: contain;
-    
+    margin: 0;
+}
+h1,h2{
+color: bisque;
+text-align: center;
 }
 .logo:hover{
     animation: buh 1.5s;
@@ -21,8 +20,6 @@ body{
 }
 p{
     text-align: center;
-    font-size: 30px;
-    color: bisque;
 }
 a{
     color: bisque;
