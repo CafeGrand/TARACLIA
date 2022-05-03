@@ -9,6 +9,7 @@ body{
     background-color: rgb(57, 146, 45);
     background-image: url(../IMAGES/stol.png);
     background-size: contain;
+    
 }
 .logo:hover{
     animation: buh 1.5s;
@@ -37,6 +38,9 @@ a{
 .round a{
     text-decoration: none;
 }
+.round:hover{
+    background-color: darkgreen;
+}
 .text {
 	font-size: 30px;
 }
@@ -48,8 +52,24 @@ a{
 	
 }
 table{ 
-    padding: 0px 10px; 
-    background-color: rgba (200, 200, 173, 0.5);
+    padding: 0px 10px;
 }
-
+.VIDEO{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rolik{
+    border-radius: 20px;
+}
+footer {
+    background-color: rgba(78, 68, 32, 0.801);
+    min-height: 50px;
+    color:bisque;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    width: 100%;
+    font-size: 24px;
+}
 
