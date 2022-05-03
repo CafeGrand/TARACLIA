@@ -8,19 +8,46 @@
     <meta name="description" content="Уютное кафе в Тараклии" />
     <meta name="keywords" content="тараклия, пицца, пицца, гранд, грант, гранд тараклия, грант тараклия, пиццерия, pizzagrand, пиццагранд, grand, баргранд,досуг " />
     <meta name="author" content="Кафе-бар GRAND" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link rel="stylesheet" href="../CSS/contacty.css">
+    <script src="../JS/script.js">S</script>
     <title>КОНТАКТЫ</title>
 </head>
 <body>
     <main>
+        <!--невидимое голосовое сообщение-->
         <audio autoplay>
             <source src="../MEDIA/YouCan.mp3" type="audio/mpeg">
         </audio>
         <h1 class="hmenu">КОНТАКТЫ</h1>
-        <hr class="linia">
+        <hr class="linia"> <br>
+
+        <!--Уведомление о графике работы, в зависимости от времени-->
+        <p class="OT" id= "opentime"></p>
+        <script>
+            var Grafic = new Date().getHours();  
+            if (Grafic < 10) {
+            document.getElementById("opentime").innerHTML = "МЫ ЕЩЁ ЗАКРЫТЫ!";
+            } else if (Grafic > 10) {
+            document.getElementById("opentime").innerHTML = "МЫ СЕЙЧАС ОТКРЫТЫ!";
+            }
+        </script>
+
+        <!-- кнопка "Узнать время"-->
+        <div class="vremya">
+            <button class="knopka_vremya" onclick="getElementById('et4').innerHTML=Date();">УЗНАТЬ ТОЧНОЕ ВРЕМЯ</button>
+            <p id="et4"></p>
+        </div>
+
+        <!--СПОСОБЫ СВЯЗИ-->
         <div class="ContDan">
+            <p class="tel"><i class="fas fa-phone-square-alt"></i> ТЕЛЕФОН +373(0294) 22828 </p>
+            <p class="iF"><a href="https://www.instagram.com/grand_cafe_taraclia/" target="blanc"><i class="fab fa-instagram-square"></i> INSTAGRAM</a></p>
+            <p class="iF"><a href="https://www.facebook.com/GRANDcafeTaraclia" target="blanc"><i class="fab fa-facebook-square"></i> FACEBOOK</a></p>
             <div class="forma">
-                <h3 class="hmenu">Оставьте сообщение <i class="fas fa-envelope-open"></i></h3>
+                <br>
+                <h2 class="hmenu">Отправьте нам сообщение <i class="fas fa-envelope-open"></i></h2>
+                
                 <form autocomplete="off" id="formular" action="">
                     <input type="text" placeholder="Имя" required id="imea" />
                     <input type="email" placeholder="email" required id="adress" />
@@ -29,16 +56,14 @@
                     <input type="button" value="Отправить" id="knopka" onclick="send()" />
                 </form>
             </div>
-            <div class="col-5" phoneContact>
-                
-            </div>
+            
            
         </div>
 
     </main>
     <footer>
-        <h1>&copy;кафе ЖАР-ПТИЦА 2022</h1>
-    </footer>
+        <span class="Copyright">&copy;Кафе-бар GRAND<span> <script type="text/javascript">document.write(new Date().getFullYear());</script></span></span>
+    </footer> 
     <Script>
         emailjs.init("KsDzcq9NfO4MGj6Qn");
         function send() {
@@ -62,7 +87,8 @@
             }) 
         }
     </Script>
-</div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
 
 </body>
 </html>
