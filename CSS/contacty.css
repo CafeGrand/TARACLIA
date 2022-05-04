@@ -1,20 +1,31 @@
 /*СТРАНИЦА КОНТАКТы*/
 body{
     background-image: url(../IMAGES/divan.jpg);
-    background-size: cover;
+    background-size: contain;
     background-color: rgb(57, 146, 45);
     margin: 0;
 }
-.hmenu{
-    color: bisque;
-    margin: 5px;
-    text-align: center;
+/*НАВИГАЦИЯ*/
+table{ 
+    padding: 0px 10px;
 }
-h2.hmenu {
+a{
     color: bisque;
-    padding: 10px;
-    text-align: center;
 }
+.round{
+    text-align: center;
+    border: 5px white;
+    border-radius: 20px;
+    border-style: groove;
+    width: auto;
+}
+.round a{
+    text-decoration: none;
+}
+.round:hover{
+    background-color: darkgreen;
+}
+
 
 /* МЫ СЕЙЧАС...*/
 .OT{
@@ -71,7 +82,7 @@ p.iF {
     color: bisque;
 }
 
-/*ЭФФЕКТЫ И АНИМАЦИЯ*/
+/*ЭФФЕКТЫ И АНИМАЦИЯ */
 .iF a:hover {
     color: white;
 }
@@ -94,14 +105,14 @@ p.iF {
     background-color: rgba(85, 177, 85, 0.37);
     border-radius: 10px;
     box-shadow: 1px 1px 5px black;
-    margin-top: 8px;
+    margin: 10px 20px;
 }
  
 .forma{
     text-align: center;
     width: 100%;
 }
-#knopka:hover{
+#send:hover{
     cursor: pointer;
 }   
 .forma input, .forma textarea{
@@ -116,11 +127,8 @@ p.iF {
     text-decoration: underline;
     box-sizing: border-box;
 }
-/*.phoneContact p span{
-    font-size: 30px;
-    margin-left: 30px;
-}*/
-#send:hover{
+
+#knopka:hover{
     cursor: pointer;
 }
 .forma input::placeholder, .forma textarea::placeholder{
@@ -130,13 +138,31 @@ p.iF {
 .forma input,:focus .forma textarea:focus {
     border: 1px solid brown;
 }
+
+/*ВСТОЕННАЯ КАРТА*/
+.hmenu{
+    color: bisque;
+    margin: 5px;
+    text-align: center;
+}
+h2.hmenu {
+    color: bisque;
+    padding: 10px;
+    text-align: center;
+}
+.karta{
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 25%;
+    border-radius: 20px;
+}
 footer {
-    background-color: rgba(78, 68, 32, 0.801);
+    background-color: rgba(138, 116, 90, 0.85);
     min-height: 50px;
     color:bisque;
     text-align: center;
     padding-top: 15px;
-    float: left;
     width: 100%;
-    font-size: 25px;
+    font-size: 24px;
 }
