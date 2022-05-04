@@ -24,36 +24,70 @@
         <p><img class="logo" src="IMAGES/ЛОГО_GRAND_улитка++.png" height="400" width="600" /></p>
        
         <br>
-        <br>
-        <br><br><br>
-        <br>
-        <br>
-        <br>
-          <!--    <h2 class="text"><span>Кафе-бар <b>GRAND</b> – это не большое,<br>
-                    но уютное местечко в Тараклии,
-                    где:<br>
-                    можно пообедать или просто перекусить;<br>
-                    приятно провести время, выпив чашечку ароматного кофе;<br>
-                    культурно отдохнуть с друзьями;<br>
-                    весело отдохнуть с детьми;<br>
-                    не стыдно пригласить на встречу делового партнёра;<br>
-                    организовать торжественное мероприятие, и т.д.</span>
-        </h2>-->
-        <br>
-     
+        <!--slideshow-->
+
+        <div class="slideshow-container">
+            <div class="slide anim">
+                <div class="numbertext">1 / 4</div>
+                <img src="../WsiteGRANDoroject/IMAGES/HAW1.png" alt="foto_Grand" />
+                <div class="textP">Мы всегда рады Вас обслужить... </div>
+            </div>
+            <div class="slide anim">
+                <div class="numbertext">2 / 4</div>
+                <img src="../WsiteGRANDoroject/IMAGES/HAW2.png" alt="foto_coffe" />
+                <div class="textP">Кофе у нас всегда горячий...</div>
+            </div>
+            <div class="slide anim">
+                <div class="numbertext">3 / 4</div>
+                <img src="../WsiteGRANDoroject/IMAGES/HAW3.png" alt="foto_pizza" />
+                <div class="textP">...и пицца тоже...</div>
+            </div>
+            <div class="slide anim">
+                <div class="numbertext">4 / 4</div>
+                <img src="../WsiteGRANDoroject/IMAGES/HAW4.png" alt="foto_Grand_grafic_raboty" />
+                <div class="textP">Cafe GRAND</div>
+            </div>
+        </div>
+        
+
+        
+        <!-- текстовое обращение -->
         <h2 class="text"><span>Мы искренне стараемся сделать всё возможное, <br>
-                    чтобы время проведённое в <b>GRAND</b>е всегда ассоциировалось у Вас<br>
+                    чтобы время проведённое в <b>GRAND</b>е <br>
+                    всегда ассоциировалось у Вас<br>
                     с уютом и комфортом, хорошим настроением, <br>
                     приветливым персоналом и высоким уровнем сервиса,<br>
                     вкусной кухней и оперативностью подачи заказа</span>
         </h2>
         <br>
+
+        <!-- РАССЛАБЛЯЮЩЕЕ ВИДЕО -->
         <div class="VIDEO">
-        <iframe class="rolik" width="560" height="315" src="https://www.youtube.com/embed/PBWSLF2e7Aw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="rolik" width="540" height="480" src="https://www.youtube.com/embed/PBWSLF2e7Aw" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
         </div>
-        <br>
+        
         <footer>
-             <span class="Copyright">&copy;Кафе-бар GRAND<span> <script type="text/javascript">document.write(new Date().getFullYear());</script></span></span>
-        </footer>
+            <span>&copy;Кафе-бар GRAND><script type="text/javascript">document.write(new Date().getFullYear());</script></span></span>
+        </footer> 
+
+        <script>
+        var slideIndex = 0; 
+        showSlides();       
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("slide"); 
+            for (i = 0; i < slides.length; i++) {                   
+                slides[i].style.display = "none";                   
+            }
+            slideIndex++;                       
+            if (slideIndex > slides.length) {
+            slideIndex = 1;
+            } 
+            slides[slideIndex-1].style.display = "block";   
+            setTimeout(showSlides, 3000);   
+        }
+        </script>>
+        
     </body>
 </html>
