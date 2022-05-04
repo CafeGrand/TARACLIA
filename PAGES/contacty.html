@@ -14,13 +14,19 @@
     <title>КОНТАКТЫ</title>
 </head>
 <body>
-    <main>
+<main>
         <!--невидимое голосовое сообщение-->
         <audio autoplay>
             <source src="../MEDIA/YouCan.mp3" type="audio/mpeg">
         </audio>
-        <h1 class="hmenu">КОНТАКТЫ</h1>
-        <hr class="linia"> <br>
+
+        <!--НАВИГАЦИЯ-->
+        <table align="center" width="50%">
+            <th><h1></h1></th>
+            <th><h1 class="round"><a href="../index.html"> НА ГЛАВНУЮ</a></h1></th>
+            <th><h1></h1></th>
+            <th><h1 class="round"><a href="menu.html">НАШЕ МЕНЮ</a></h1></th>
+        </table>
 
         <!--Уведомление о графике работы, в зависимости от времени-->
         <p class="OT" id= "opentime"></p>
@@ -57,12 +63,16 @@
                 </form>
             </div>
             
+            <!--ВСТРОЕННАЯ КАТРА-->
+            <h2 class="hmenu"><b>МЫ НАХОДИМСЯ ЗДЕСЬ:</b></h2>
+            <iframe class="karta" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49852.23358405595!2d28.635047278828093!3d45.91470823195626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b7b49083eeee33%3A0xea3966bd5e8f58fc!2sGrand!5e0!3m2!1sru!2s!4v1651622243494!5m2!1sru!2s" width="600" height="450" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
            
         </div>
 
     </main>
     <footer>
-        <span class="Copyright">&copy;Кафе-бар GRAND<span> <script type="text/javascript">document.write(new Date().getFullYear());</script></span></span>
+        <span>&copy;Кафе-бар GRAND<span> <script type="text/javascript">document.write(new Date().getFullYear());</script></span></span>
     </footer> 
     <Script>
         emailjs.init("KsDzcq9NfO4MGj6Qn");
