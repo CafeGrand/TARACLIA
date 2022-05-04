@@ -45,24 +45,9 @@ a .round {
     
 }
 a .round:hover{
-    background-color: rgba(138, 116, 90, 0.863);
+    background-color: rgba(138, 116, 90, 0.85);
     color: bisque;
 }
-
-/*.Left a{
-    text-decoration: none;
-}
-.Left  {
-    min-width: 40%;
-    box-sizing: border-box;
-}
-.Right a{
-    text-decoration: none;
-}
-.Right{
-    min-width: 40%;
-    box-sizing: border-box;
-}*/
 .QR{
     align-items: baseline;
     max-width: 50%;
@@ -87,18 +72,19 @@ p{
 
 .mini{
     width: 7%;
-    margin-bottom: 20%;
+    margin-bottom: 30%;
     margin-left: 2%;
     margin-right: 2%;
     border-radius: 20px 20px 0 0;
 }
+
+
 footer {
-    background-color: rgba(78, 68, 32, 0.801);
+    background-color: rgba(138, 116, 90, 0.85);
     min-height: 50px;
     color:bisque;
     text-align: center;
     padding-top: 15px;
-    float: left;
     width: 100%;
-    font-size: 25px;
+    font-size: 24px;
 }
