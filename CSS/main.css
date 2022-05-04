@@ -75,10 +75,10 @@ filter: alpha(opacity=90);
   border-radius: 25px;
 }
 .textP {
-font-size: 2.7rem;
+font-size: 2rem;
 padding: 5px 12px;
 position: absolute;
-bottom: 18px;
+bottom: 10px;
 width: 100%;
 text-align: center;
 font-weight: bold;
