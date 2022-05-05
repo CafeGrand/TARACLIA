@@ -23,3 +23,4 @@ function showSlides() {
     setTimeout(showSlides, 3000);   
 }
 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
